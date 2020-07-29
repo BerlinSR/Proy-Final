@@ -1,0 +1,78 @@
+﻿
+<div class="row">
+    <div class="col s3">
+        <div class="collection">
+        @{
+            <a asp-controller="Productos" asp-action="Productos" class="collection-item active" active>Todos</a>
+            Database conexionCa = Database.getInstancia();
+
+            Microsoft.Data.Sqlite.SqliteDataReader listado = conexionCa.GetCategorias();
+            
+            while(listado.Read())
+            {
+                <a href="/Productos/Productos?Categoria_Producto=@listado.GetString(0)" class="collection-item">@listado.GetString(0)</a>
+            }
+        }
+        
+        </div>
+    </div>
+    <div class="col s9">
+        @{
+            Database conexion = Database.getInstancia();
+
+                try
+                {
+                    Console.WriteLine(ViewBag.Categoria);
+                    Microsoft.Data.Sqlite.SqliteDataReader lista = conexion.GetProductoCategorias(ViewBag.Categoria);
+                    while(lista.Read())
+                    {
+                        string imgString = "/images/"+ lista.GetString(5);
+
+                        <div class="col s3">
+                            <div class="card">
+                                <div class="card-image">
+                                <img src="@imgString">
+                                <span class="card-title">@lista.GetString(1)</span>
+                                </div>
+                                <div class="card-content">
+                                <p>PRECIO: @lista.GetString(2)<br>
+                                EXISTENCIA: @lista.GetString(3)</p>
+                                </div>
+                                <div class="card-action">
+                                <a href="#">This is a link</a>
+                                <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+
+                } catch(Microsoft.CSharp.RuntimeBinder.RuntimeBinderException e){
+                    Console.WriteLine(e.Message);
+                    Microsoft.Data.Sqlite.SqliteDataReader lista = conexion.GetData();
+                    while(lista.Read())
+                    {
+                        string imgString = "/images/"+ lista.GetString(5);
+
+                        <div class="col s3">
+                            <div class="card">
+                                <div class="card-image">
+                                <img src="@imgString">
+                                <span class="card-title">@lista.GetString(1)</span>
+                                </div>
+                                <div class="card-content">
+                                <p>PRECIO: @lista.GetString(2)<br>
+                                EXISTENCIA: @lista.GetString(3)</p>
+                                </div>
+                                <div class="card-action">
+                                <a href="#">This is a link</a>
+                                <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                }            
+        }
+    </div>
+</div>
