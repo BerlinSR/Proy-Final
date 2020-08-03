@@ -11,17 +11,25 @@ nav {
    
     
 }
+    nav .nav-wrapper{
+        width:100%;
+    }
+    #logo-container{
+        margin-left:8%;
+    }
+    #ContenedorIco{
+        margin-right:2%;
+    }
 nav ul a,
 nav .brand-logo {
-  color: #444;
-  
+    color: #444;
 }
 
 p {
   line-height: 2rem;
 }
 sidenav {
-  
+ 
    
 }
 .sidenav-trigger {
@@ -57,7 +65,7 @@ sidenav {
 }
 
 .icon-block {
-  padding: 0 15px;
+  padding: 0 12px;
 }
 .icon-block .material-icons {
   font-size: inherit;

@@ -11,30 +11,66 @@
     <link href="~/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="~/css/Cards.css" type="text/css" rel="stylesheet" />
     <link href="~/css/cardCategorias.css" type="text/css" rel="stylesheet" />
+    <link href="~/css/EstilosP.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
     <header>
-        <nav class="white" role="navigation">
-            <div class="nav-wrapper container">
-                <a id="logo-container" class="brand-logo teal-text" asp-area="" asp-controller="Home" asp-action="index">CODEX<i class="large material-icons teal-text"  style="font-size: 30px">developer_mode</i></a>
+        <div class="navbar">
 
-                <ul class="right hide-on-med-and-down">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><i class="material-icons teal-text">home</i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link text-dark"><i class="tiny fa fa-shopping-cart teal-text"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link text-dark"><i class="small fa fa-user-circle teal-text"></i></a>
-                    </li>
-                </ul>
-                <ul id="nav-mobile" class="sidenav">
-                    <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                </ul>
-                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            </div>
-        </nav>
+            <nav class="white">
+                <div class="nav-wrapper container">
+                    <a id="logo-container" class="brand-logo teal-text" asp-area="" asp-controller="Home" asp-action="index">CODEX<i class="large material-icons teal-text" style="font-size: 30px">developer_mode</i></a>
+
+                    <ul id="ContenedorIco" class="right hide-on-med-and-down">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><i class="material-icons teal-text">home</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-dark"><i class="tiny fa fa-shopping-cart teal-text"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-dark"><i class="small fa fa-user-circle teal-text"></i></a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="sidenav">
+                        <li>
+                            <div class="user-view">
+                                <div class="background">
+                                    <img src="~/image/background3.jpg" alt="">
+                                </div>
+                                <a href="">
+                                    <img src="~/image/ropaMale3.jpeg" alt="" class="circle">
+                                </a>
+                                <a href="">
+                                    <span class="name white-text">Nombre sexy</span>
+                                </a>
+                                <a href="">
+                                    <span class="email white-text">EmailSexy@gmail.com</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><i class="small fa fa-user-circle black-text"></i>Perfil</a></li>
+                        <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><i class="small fa fa-home black-text"></i>Home</a></li>
+                        <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><i class="small fa fa-shopping-cart black-text"></i>Carrito</a></li>
+                        <li>                    
+                        </li>
+                    </ul>
+
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                </div>
+            </nav>
+            <nav class="white">
+                <div class="nav-wrapper2 container">
+                    <ul class="center hide-on-med-and-down">
+                        <li class="nav-item">
+                        </li>
+                        <li><a  asp-area="" asp-controller="Productos" asp-action="Productos">Categorias</a></li>
+                        <li><a href="badges.html"></a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
     </header>
     <div class="container" id="container1" style="width:100%; max-width: 1380px;">
         <main role="main" >
