@@ -73,9 +73,8 @@ namespace Final.Controllers
             }
 
                 Database Conexion = Database.getInstancia();
-                string script = "INSERT INTO Productos(CodArticulo, Nombre, Precio_Unitario, Existentes,"+
+                string script = "INSERT INTO Productos(Nombre, Precio_Unitario, Existentes,"+
                 "Categoria, Imagen) VALUES('"+
-                Codigo_Producto+"','"+ 
                 Nombre_Producto+"','"+ 
                 Precio_Producto+"','"+ 
                 Existencia_Producto+"','"+

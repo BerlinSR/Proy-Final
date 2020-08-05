@@ -14394,6 +14394,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\frand\\Desktop\\New folder (2)\\Proy-Final-CasiFinal\\Views\\Carrito\\Carrito.cshtml",
+      "TargetPath": "Views\\Carrito\\Carrito.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\frand\\Desktop\\New folder (2)\\Proy-Final-CasiFinal\\Views\\Productos\\ProductoAdmin.cshtml",
       "TargetPath": "Views\\Productos\\ProductoAdmin.cshtml",
       "FileKind": "mvc"

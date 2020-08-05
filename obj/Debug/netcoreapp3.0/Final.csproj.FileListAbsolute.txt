@@ -284,3 +284,4 @@ C:\Users\frand\Desktop\New folder (2)\Proy-Final-CasiFinal\obj\Debug\netcoreapp3
 C:\Users\frand\Desktop\New folder (2)\Proy-Final-CasiFinal\obj\Debug\netcoreapp3.0\Razor\Views\User\Login.cshtml.g.cs
 C:\Users\frand\Desktop\New folder (2)\Proy-Final-CasiFinal\obj\Debug\netcoreapp3.0\Razor\Views\User\AgregarAdmin.cshtml.g.cs
 C:\Users\frand\Desktop\New folder (2)\Proy-Final-CasiFinal\obj\Debug\netcoreapp3.0\Razor\Views\User\GetBirthday.cshtml.g.cs
+C:\Users\frand\Desktop\New folder (2)\Proy-Final-CasiFinal\obj\Debug\netcoreapp3.0\Razor\Views\Carrito\Carrito.cshtml.g.cs

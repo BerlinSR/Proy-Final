@@ -90,7 +90,7 @@ namespace Final.Models
             connection.Open();
 
             var selectCmd = connection.CreateCommand();
-            selectCmd.CommandText = "SELECT correo, password, rol FROM Usuario WHERE correo='"+Correo_User+"' AND password='"+Password_User+"';";
+            selectCmd.CommandText = "SELECT * FROM Usuario WHERE correo='"+Correo_User+"' AND password='"+Password_User+"';";
 
             var reader = selectCmd.ExecuteReader();
 

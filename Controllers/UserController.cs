@@ -69,9 +69,18 @@ namespace Final.Controllers
             if(lista.HasRows){
                 while(lista.Read()){
                     Usuario.getInstancia().UsuarioAuthentication = true;
+
+                    Usuario.getInstancia().IdUser = lista.GetString(0);
+                    Usuario.getInstancia().Nombre = lista.GetString(1);
+                    Usuario.getInstancia().Apellido = lista.GetString(2);
+                    Usuario.getInstancia().Telefono = lista.GetString(4);
+                    Usuario.getInstancia().Fecha_Nacimiento = lista.GetString(5);
+                    Usuario.getInstancia().Correo = lista.GetString(6);
+
                     if(lista.GetString(2) == "Admin"){
                         Usuario.getInstancia().UsuarioIsAdmin = true;
                     }
+                    
                 }
                 RedirectToAction("Index","Home");
             }else{
